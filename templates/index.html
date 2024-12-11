@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <title>മലയാളം Apples to Apples</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Next Turn button and current player display -->
+
+        <div class = "card" id="green-card"></div>
+        <div id="turn-control">
+            
+            <button onclick="nextTurn()" class="next-turn-btn">Next Turn</button>
+        </div>
+        <div id="player-hand-container">
+            <div class="section-header"><h2 id="current-player-header">Your Hand</h2></div>
+            <div id="player-hand"></div>
+        </div>
+        <div id="played-cards"></div>
+        <div id="scores"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 

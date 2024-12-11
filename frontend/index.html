@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <title>മലയാളം Apples to Apples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-screen">
+        <h1>മലയാളം Apples to Apples</h1>
+        <input type="text" id="player-name" placeholder="നിങ്ങളുടെ പേര്">
+        <input type="text" id="game-id" placeholder="ഗെയിം ID">
+        <button onclick="joinGame()">കളിക്കാൻ ചേരുക</button>
+        <button onclick="createGame()">പുതിയ കളി തുടങ്ങുക</button>
+    </div>
+
+    <div id="game-screen" style="display: none;">
+        <div id="green-card"></div>
+        <div id="player-hand"></div>
+        <div id="played-cards"></div>
+        <div id="scores"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
