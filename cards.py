@@ -31,8 +31,84 @@ class Cards:
             {"id": 15, "text": "ബുദ്ധിമാൻ", "translation": "Intelligent", "category": "character"}
         ]
 
-        # Red cards (nouns in Malayalam)
         self.red_cards = [
+            # Animals
+            {"id": 1, "text": "കാക്ക", "translation": "Crow", "category": "animal"},
+            {"id": 2, "text": "പൂച്ച", "translation": "Cat", "category": "animal"},
+            {"id": 3, "text": "ആമ", "translation": "Turtle", "category": "animal"},
+            {"id": 4, "text": "പല്ലി", "translation": "Lizard", "category": "animal"},
+            {"id": 5, "text": "പറവ", "translation": "Bird", "category": "animal"},
+            
+            # Body Parts
+            {"id": 6, "text": "നാക്ക്", "translation": "Tongue", "category": "body"},
+            {"id": 7, "text": "കണ്ണ്", "translation": "Eye", "category": "body"},
+            {"id": 8, "text": "മെയ്യ്", "translation": "Body", "category": "body"},
+            {"id": 9, "text": "പല്ല്", "translation": "Tooth", "category": "body"},
+            
+            # Nature
+            {"id": 10, "text": "തെക്കു", "translation": "South", "category": "nature"},
+            {"id": 11, "text": "മഞ്ഞള്‍", "translation": "Turmeric", "category": "nature"},
+            {"id": 12, "text": "വെള്ളം", "translation": "Water", "category": "nature"},
+            {"id": 13, "text": "പാട്ട്", "translation": "Song", "category": "nature"},
+            {"id": 14, "text": "മരത്തന്‍", "translation": "Tree", "category": "nature"},
+            {"id": 15, "text": "തെങ്ങ്", "translation": "Coconut Tree", "category": "nature"},
+            {"id": 16, "text": "പർവതം", "translation": "Mountain", "category": "nature"},
+            {"id": 17, "text": "മുറ്റം", "translation": "Courtyard", "category": "nature"},
+            {"id": 18, "text": "തുള്ളി", "translation": "Drop", "category": "nature"},
+            
+            # Food
+            {"id": 19, "text": "അപ്ലം", "translation": "Appam", "category": "food"},
+            {"id": 20, "text": "മാങ്ങ", "translation": "Mango", "category": "food"},
+            {"id": 21, "text": "തേങ്ങ", "translation": "Coconut", "category": "food"},
+            {"id": 22, "text": "നെയ്യ്", "translation": "Ghee", "category": "food"},
+            {"id": 23, "text": "നെയ്", "translation": "Ghee", "category": "food"},
+            {"id": 24, "text": "നെയ്യപ്പം", "translation": "Ghee Cake", "category": "food"},
+            {"id": 25, "text": "മല്ലി", "translation": "Coriander", "category": "food"},
+            
+            # Family
+            {"id": 26, "text": "അമ്മാവന്‍", "translation": "Uncle", "category": "family"},
+            {"id": 27, "text": "അമ്മ", "translation": "Mother", "category": "family"},
+            {"id": 28, "text": "മുത്തശ്ശി", "translation": "Grandmother", "category": "family"},
+            {"id": 29, "text": "പെണ്ണ്", "translation": "Girl/Woman", "category": "family"},
+            {"id": 30, "text": "മുത്തശ്ശൻ", "translation": "Grandfather", "category": "family"},
+            {"id": 31, "text": "പയ്യൻ", "translation": "Young Man/Boy", "category": "family"},
+            
+            # Objects
+            {"id": 32, "text": "ചാക്ക്", "translation": "Sack", "category": "object"},
+            {"id": 33, "text": "വീച്ചി", "translation": "Fan", "category": "object"},
+            {"id": 34, "text": "കത്തി", "translation": "Knife", "category": "object"},
+            {"id": 35, "text": "കണ്ണാടി", "translation": "Mirror", "category": "object"},
+            {"id": 36, "text": "കല്ല്", "translation": "Stone", "category": "object"},
+            {"id": 37, "text": "വള്ളം", "translation": "Boat", "category": "object"},
+            {"id": 38, "text": "ചുറ്റിക", "translation": "Hammer", "category": "object"},
+            {"id": 39, "text": "പട്ടം", "translation": "Kite", "category": "object"},
+            
+            # Places
+            {"id": 40, "text": "പള്ളിക്കൂടം", "translation": "School", "category": "place"},
+            {"id": 41, "text": "കുള", "translation": "Pond", "category": "place"},
+            
+            # Abstract
+            {"id": 42, "text": "സംസാരം", "translation": "Speech/Talk", "category": "abstract"},
+            {"id": 43, "text": "മനസ്", "translation": "Mind", "category": "abstract"},
+            {"id": 44, "text": "വയസ്", "translation": "Age", "category": "abstract"},
+            {"id": 45, "text": "തമസ്സു", "translation": "Darkness", "category": "abstract"},
+            {"id": 46, "text": "ദയസ്സ്", "translation": "Mercy", "category": "abstract"},
+            {"id": 47, "text": "തടസ്സം", "translation": "Obstacle", "category": "abstract"},
+            
+            # Miscellaneous
+            {"id": 48, "text": "പുഷ്പം", "translation": "Flower", "category": "misc"},
+            {"id": 49, "text": "തെയ്യല്‍", "translation": "Sewing", "category": "misc"},
+            {"id": 50, "text": "ചോല", "translation": "Stream", "category": "misc"},
+            {"id": 51, "text": "കൂട്ടിശ്ശിക", "translation": "Balance Amount", "category": "misc"},
+            {"id": 52, "text": "മല്ലു", "translation": "Wrestling", "category": "misc"},
+            {"id": 53, "text": "ചോദ്യമിഴ്", "translation": "Question", "category": "misc"},
+            {"id": 54, "text": "പരോ", "translation": "Is It Enough", "category": "misc"},
+            {"id": 55, "text": "രവുസ്സ്", "translation": "Blouse", "category": "misc"},
+            {"id": 56, "text": "വെള്ളി", "translation": "Silver", "category": "misc"}
+        ]
+
+        # Red cards (nouns in Malayalam)
+        self.red_cards_2 = [
             # Animals
             {"id": 1, "text": "എരുമ", "translation": "Buffalo", "category": "animal"},
             {"id": 2, "text": "എലി", "translation": "Mouse", "category": "animal"},

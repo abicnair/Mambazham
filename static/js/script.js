@@ -26,8 +26,8 @@ function updateGameState() {
             // Update green card
             document.getElementById('green-card').innerHTML = `
                 <div class="card-text">${gameState.green_card.text}</div>
-                <div class="card-translation">${gameState.green_card.translation}</div>
             `;
+            // <div class="card-translation">${gameState.green_card.translation}</div>
             
             // Update player hand
             console.log("playerId", playerId);
@@ -43,12 +43,13 @@ function updateGameState() {
                                 onclick="${gameState.current_judge !== playerId ? `selectCard(this, ${card.id})` : ''}"
                                 data-card-id="${card.id}">
                                 <div class="card-text">${card.text}</div>
-                                <div class="card-translation">${card.translation}</div>
                             </div>
                         `).join('')}
                     </div>
                     `;
-            }
+                    // <div class="card-translation">${card.translation}</div>
+
+                }
             else {
                 const handDiv = document.getElementById('player-hand');
                 handDiv.innerHTML = '';
