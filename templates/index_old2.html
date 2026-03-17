@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malayalam Card Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="game-options">
+            <div id="create-game-section">
+                <h2>Create New Game</h2>
+                <button class="action-button" onclick="createGame()">Create Game</button>
+                <div id="game-code" class="game-code"></div>
+            </div>
+
+            <div id="join-game-section">
+                <h2>Join Existing Game</h2>
+                <div id="join-message" class="message"></div>
+                <input type="text" id="session-id-input" placeholder="Enter Game Code" class="input-field">
+                <input type="text" id="player-name-input" placeholder="Enter Your Name" class="input-field">
+                <button class="action-button" onclick="joinGame()">Join Game</button>
+            </div>
+        </div>
+
+        <div id="game-section" style="display: none;">
+            <div id="waiting-room">
+                <h2>Waiting Room</h2>
+                <div id="player-list" class="player-list"></div>
+                <button class="action-button" onclick="startGame()" id="start-game-button">Start Game</button>
+            </div>
+
+            <div id="game-board" style="display: none;">
+                <div class="board-section">
+                    <h3>Green Card</h3>
+                    <div id="green-card" class="card-area"></div>
+                </div>
+
+                <div class="board-section">
+                    <h3>Played Cards</h3>
+                    <div id="played-cards" class="card-area"></div>
+                </div>
+
+                <div class="board-section">
+                    <h3>Your Hand</h3>
+                    <div id="player-hand" class="card-area"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 
